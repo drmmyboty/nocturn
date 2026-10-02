@@ -1,0 +1,15 @@
+{
+  "name": "nocturn",
+  "version": "1.0.0",
+  "description": "Nocturn wallpaper maker",
+  "author": "Nocturn",
+  "main": "main.js",
+  "devDependencies": { "electron": "^31.0.0", "electron-builder": "^24.13.3" },
+  "build": {
+    "appId": "app.nocturn.desktop",
+    "productName": "Nocturn",
+    "files": ["main.js", "index.html"],
+    "directories": { "output": "dist" },
+    "win": { "target": "portable", "icon": "build/icon.ico", "artifactName": "Nocturn.exe" }
+  }
+}
